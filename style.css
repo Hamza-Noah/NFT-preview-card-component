@@ -1,105 +1,104 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: "Outfit", sans-serif;
-    background-color: #0d1a2d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .card {
-    width: 360px;
-    background-color: #15273f;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .card .img {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .card .img img {
-    max-width: 100%;
-    border-radius: 7px;
-  }
-  
-  .card .img img.view {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
-  
-  .card .img:hover img.view {
-    display: block;
-  }
-  
-  .card .img:hover:before {
-    content: "";
-    background-color: rgba(0, 255, 247, 0.3);
-    position: absolute;
-    width: 100%;
-    height: 99%;
-    border-radius: 10px;
-  }
-  
-  .card .info h2:hover{
-   color: hsl(178, 100%, 50%);
-  }
-  
-  .card .info p {
-    font-size: 18px;
-    color: hsl(215, 51%, 70%);
-    padding-block: 10px 25px;
-    line-height: 1.5;
-  }
-  
-  .card .info .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: solid 1px #2f415b;
-  }
-  
-  .card .info .row img {
-    padding-right: 5px;
-    vertical-align: middle;
-  }
-  
-  .card .info .row span:first-child {
-    color: hsl(178, 100%, 50%);
-  }
-  
-  .card .info .row span:last-child {
-    color: #8bacd9;
-  }
-  
-  .card .info .account {
-    padding-top: 15px;
-  }
-  
-  .card .info .account span:first-child {
-    color: hsl(215, 32%, 27%);
-  }
-  
-  .card .info .account span:last-child:hover{
-    color: hsl(178, 100%, 50%);
-  }
-  
-  .card .info .account img {
-    vertical-align: middle;
-    height: 2em;
-    margin-right: 1rem;
-    border-radius: 50%;
-    border: solid 1px white;
-  }
-  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #0d1a2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.card {
+  max-width: 360px;
+  background-color: #15273f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.img {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.img img {
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+.img:hover img.view {
+  display: block;
+}
+
+.img:hover:before {
+  content: "";
+  background-color: rgba(0, 255, 247, 0.3);
+  background-image: url("images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  border-radius: 10px;
+}
+
+.info h1 {
+  font-size: 1.5re;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.info p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  padding-block: 10px 25px;
+  line-height: 1.5;
+}
+
+.info .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #2f415b;
+}
+
+.info .row img {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.info .row span:first-child {
+  color: hsl(178, 100%, 50%);
+}
+
+.info .row span:last-child {
+  color: #8bacd9;
+}
+
+.info .account {
+  padding-top: 15px;
+}
+
+.info .account a {
+  color: hsl(215, 32%, 27%);
+}
+
+.info .account a:hover {
+  color: hsl(178, 200%, 50%);
+}
+
+.info .account img {
+  vertical-align: middle;
+  height: 2em;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: solid 1px white;
+}
