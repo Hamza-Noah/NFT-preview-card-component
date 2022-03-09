@@ -17,8 +17,8 @@ body {
 .card {
   max-width: 350px;
   background-color: #15273f;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 24px;
+  border-radius: 15px;
 }
 
 .img {
@@ -49,6 +49,7 @@ body {
 
 .info h1 {
   font-size: 1.5rem;
+  color: white;
 }
 
 a:hover {
@@ -66,7 +67,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   border-bottom: solid 1px #2f415b;
 }
 
@@ -85,7 +86,7 @@ a:hover {
 
 .info .account {
   padding-top: 15px;
-  color: hsl(215, 32%, 27%);
+  color: #8bacda;
 }
 
 .info .account a {
@@ -98,7 +99,7 @@ a:hover {
 
 .info .account img {
   vertical-align: middle;
-  height: 2em;
+  height: 32px;
   margin-right: 1rem;
   border-radius: 50%;
   border: solid 1px white;
